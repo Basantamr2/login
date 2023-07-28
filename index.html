@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- -------------------------------- Sign Up Screen-------------------------------- -->
+    <div class="screen vh-100 pt-5 d-block" id="signupScreen">
+        <div class="card w-50 m-auto p-5 rounded-0">
+            <h1 class="fs-1 fw-lighter text-center text-capitalize mb-3">smart login system</h1>
+            <input type="text" placeholder="Enter your name" class="form-control mb-3" id="name">
+            <input type="email" placeholder="Enter your email"  class="form-control mb-3" id="mail">
+            <input type="password" placeholder="Enter password"  class="form-control mb-3" id="pass">
+            <p class="para text-center"></p>
+            <button class="text-capitalize bg-transparent form-control mt-3" id="signupBtn">sign up</button>
+            <p class="text-center text-white mt-3">You have an account?<a href="#" class="signinLink text-white text-capitalize text-decoration-none ms-1">signin</a></p>
+        </div>
+    </div>
+
+    <!-- --------------------------- Sign In Screen ---------------------------- -->
+    <div class="d-none screen vh-100 pt-5" id="signinScreen">
+        <div class="card w-50 m-auto p-5 rounded-0">
+            <h1 class="fs-1 fw-lighter text-center text-capitalize mb-3">smart login system</h1>
+            <input type="email" placeholder="Enter your email"  class="form-control mb-3" id="remail">
+            <input type="password" placeholder="Enter your password"  class="form-control mb-3" id="repass">
+            <p class="paraTwo text-danger text-center"></p>
+            <button class="loginBtn text-capitalize bg-transparent form-control mt-3">Login</button>
+            <p class=" text-center text-white mt-3">Don’t have an account?<a href="#" class="signupLink text-white text-capitalize text-decoration-none ms-1">sign up</a></p>
+        </div>
+    </div>
+
+    <!-- ----------------------------- Home Screen ----------------------------- -->
+    <div class="screen d-none " id="homeScreen">
+        <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-lg">
+            <div class="container px-5 py-1">
+                <a class="navbar-brand text-uppercase text-white" href="#">smart login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <button class="logout ms-auto btn btn-outline-warning text-capitalize" type="submit">logout</button>
+                </div>
+            </div>
+        </nav>
+        <div class="parent d-flex align-items-center justify-content-center vh-100">
+            <div class="card w-50 rounded-0 py-5">
+                <h1 class="fw-lighter text-center text-capitalize" id="heading"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
